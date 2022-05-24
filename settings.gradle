@@ -15,34 +15,34 @@
  */
 
 plugins {
-    id 'com.gradle.enterprise' version '3.5'
+    id("com.gradle.enterprise").version("3.5")
 }
 
 gradleEnterprise {
     buildScan {
-        termsOfServiceUrl = 'https://gradle.com/terms-of-service'
-        termsOfServiceAgree = 'yes'
+        termsOfServiceUrl = "https://gradle.com/terms-of-service"
+        termsOfServiceAgree = "yes"
     }
 }
 
-include ':internal-testutils'
-include ':insets'
-include ':insets-ui'
-include ':appcompat-theme'
-include ':drawablepainter'
-include ':navigation-animation'
-include ':navigation-material'
-include ':pager'
-include ':pager-indicators'
-include ':permissions'
-include ':permissions-lint'
-include ':placeholder'
-include ':placeholder-material'
-include ':flowlayout'
-include ':systemuicontroller'
-include ':swiperefresh'
-include ':sample'
-include ':web'
+include(":internal-testutils")
+include(":insets")
+include(":insets-ui")
+include(":appcompat-theme")
+include(":drawablepainter")
+include(":navigation-animation")
+include(":navigation-material")
+include(":pager")
+include(":pager-indicators")
+include(":permissions")
+include(":permissions-lint")
+include(":placeholder")
+include(":placeholder-material")
+include(":flowlayout")
+include(":systemuicontroller")
+include(":swiperefresh")
+include(":sample")
+include(":web")
 
 // Enable Gradle's version catalog support
 // https://docs.gradle.org/current/userguide/platforms.html

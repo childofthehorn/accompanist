@@ -16,8 +16,8 @@
 
 @Suppress("DSL_SCOPE_VIOLATION")
 plugins {
-    id("com.android.application")
-    id("kotlin-android")
+    id(BuildPlugins.Id.app)
+    id(BuildPlugins.Kotlin.android)
 }
 
 android {
